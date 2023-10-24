@@ -4,6 +4,7 @@ const express = require("express");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 3001;
+const path = require("path");
 
 const app = express();
 
@@ -17,13 +18,7 @@ const dbConfig = {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.post("/", (req, res) => {
-  const { dni, localidad, fecha, nombreAnimal, tipoAnimal } = req.body;
-});
-
-/*res.json({ message: "Datos cargados exitosamente" });*/
-
-app.post("/");
+app.post("/", (req, res) => {});
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
