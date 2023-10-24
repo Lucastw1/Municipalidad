@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import App from "..app/src/App.jsx";
-import solicitarturno from "../resources/solicitar-turno";
+import solicitarturno from "../resources/solicitarturno";
 
 export const routes = (
   <Router>
